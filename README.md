@@ -12,6 +12,7 @@ A discord bot to send you images of cats
 The env file should look something like this
 
 ![image](https://user-images.githubusercontent.com/62844691/117809009-3da6df80-b27b-11eb-98f6-beafc7f98181.png)
+
 5. Now install the requirements to run the app with the `pip install -r requirements.txt`
 6. now start the `main.py` file in the directory 
 7. Invite the bot to your server
