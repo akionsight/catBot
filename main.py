@@ -1,5 +1,5 @@
 from discord.ext import commands
-import requests
+import aiohttp
 from startup import *
 bot = commands.Bot(command_prefix='`')
 
@@ -12,7 +12,9 @@ async def on_ready():
 async def cat(ctx):
     channel_id = ctx.channel.id
     if str(channel_id) in allowed_channels:
-        await ctx.send(requests.get('https://api.thecatapi.com/v1/images/search').json()[0]['url'])
+        async with aiohttp.request("GET", "https://api.thecatapi.com/v1/images/search") as r:
+            r = await r.json()
+            await ctx.send(r[0]['url'])
     else:
         await ctx.send('Sorry, Cat Images are not allowed in this channel')
 
