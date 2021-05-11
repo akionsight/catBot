@@ -27,3 +27,6 @@ Also, please provide feedback if you end up using this bot
 ### License 
 
 This project is under the MIT license that can be found in this repo
+
+
+![image](https://user-images.githubusercontent.com/62844691/117809737-2ae0da80-b27c-11eb-9b36-47dc477e6967.png)
